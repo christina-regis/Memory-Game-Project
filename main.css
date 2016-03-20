@@ -4,6 +4,7 @@ body {
 
 h1 {
   color: white;
+  padding: 5px;
   text-align: center;
 }
 
@@ -11,7 +12,7 @@ h1 {
   position: block;
   height: 600px;
   width: 650px;
-  border: 2px solid white;
+  /*border: 2px solid white;*/
   text-align: center;
   margin: 0 auto;
   /*perspective: 1000px;*/
@@ -36,19 +37,43 @@ h1 {
   width: 150px;
   height: 150px;
   backface-visibility: hidden;
-  background-color: white;
+  background-color: lightgray;
 }
 
 .back {
   display: black;
   transform: rotateY(180deg);
   /*box-sizing: border-box;*/
-  background-color: lightgray;
+  /*background-color: lightgray;*/
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.purple {
+  background-color: purple
 }
 
 button {
 background-color: black;
 color: white;
-font-size: 16px;
-margin-top: 10px;
+font-size: 20px;
+margin-top: 20px;
 }
