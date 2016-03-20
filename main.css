@@ -1,3 +1,54 @@
 body {
   background-color: teal;
 }
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.container {
+  position: block;
+  height: 600px;
+  width: 650px;
+  border: 2px solid white;
+  text-align: center;
+  margin: 0 auto;
+  /*perspective: 1000px;*/
+}
+
+.box {
+  height: 150px;
+  width: 150px;
+  float: left;
+  margin: 5px;
+  border: 1px solid white;
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
+
+.box:hover {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  backface-visibility: hidden;
+  background-color: white;
+}
+
+.back {
+  display: black;
+  transform: rotateY(180deg);
+  /*box-sizing: border-box;*/
+  background-color: lightgray;
+}
+
+button {
+background-color: black;
+color: white;
+font-size: 16px;
+margin-top: 10px;
+}
