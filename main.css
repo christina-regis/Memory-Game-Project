@@ -28,7 +28,9 @@ h1 {
   transition: all 0.5s linear;
 }
 
-.box:hover {
+/*.box:hover*/
+
+.flip, .matched {
   transform: rotateY(180deg);
 }
 
@@ -41,7 +43,7 @@ h1 {
 }
 
 .back {
-  display: black;
+  /*display: black;*/
   transform: rotateY(180deg);
   /*box-sizing: border-box;*/
   /*background-color: lightgray;*/
