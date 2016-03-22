@@ -56,35 +56,35 @@ p {
   /*box-sizing: border-box;*/
 }
 
-.green {
+.dog1 {
   background-image: url("images/miniausie.jpg");
   background-size: cover;
 }
 
-.red {
+.dog2 {
   background-image: url("images/labradoodle2.jpg");
   background-size: cover;
 }
 
-.blue {
+.dog3 {
   background-image: url("images/schnauzer.jpg");
   background-position: center;
   background-size: 75%;
 }
 
-.yellow {
+.dog4 {
   background-image: url("images/pitbull.jpg");
   background-position: center;
   background-size: 135%;
 }
 
-.orange {
+.dog5 {
   background-image: url(images/beagle.jpg);
   background-position: center;
   background-size: 175%;
 }
 
-.purple {
+.dog6 {
   background-image: url("images/german.jpg");
   background-position: center;
   background-size: 175%;
