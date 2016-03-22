@@ -20,7 +20,9 @@ var checkBox = function(){
     $(square2).removeClass('flip').addClass('matched').off('click');
     counter = 0;
     matches = matches + 1;
-    window.alert('You got a match!');
+    $('p').text('You made a match!');
+    setTimeout(function (){
+      $('p').text('')}, 800);
       if (matches === 6) {
         window.alert('You matched all the colors');
       }
@@ -32,12 +34,9 @@ var checkBox = function(){
     }
   };
 
-$('button').on('click', function() {
-  $('div').each( function(){
-    $('div').removeClass('matched').on('click');
-  });
+$('button').on('click', function(){
+  location.reload();
 });
 
 
-//when all colors are matched alert "Good Job, you have a great memory!"
 //reload board when reset button is pushed

@@ -12,6 +12,10 @@ h1 {
   text-align: center;
 }
 
+p {
+  color: white;
+}
+
 .container {
   position: block;
   height: 600px;
