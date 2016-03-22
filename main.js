@@ -20,6 +20,10 @@ var checkBox = function(){
     counter = 0;
     window.alert('You got a match!');
     }
+    else if ((!$(this).hasClass('flip'))) {
+      window.alert('Good job, you matched all the colors!');
+    }
+
     else {
       $(square2).removeClass('flip');
       $(square1).removeClass('flip');
@@ -28,4 +32,6 @@ var checkBox = function(){
   };
 
 
-//when all colors are matched alert "Good Job, you have a great memory!  Would you like to play again?"
+
+//when all colors are matched alert "Good Job, you have a great memory!"
+//reload board when reset button is pushed

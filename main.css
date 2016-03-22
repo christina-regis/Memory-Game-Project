@@ -24,11 +24,10 @@ h1 {
   float: left;
   margin: 5px;
   border: 1px solid white;
+  cursor: pointer;
   transform-style: preserve-3d;
   transition: all 0.5s linear;
 }
-
-/*.box:hover*/
 
 .flip, .matched {
   transform: rotateY(180deg);
@@ -43,10 +42,8 @@ h1 {
 }
 
 .back {
-  /*display: black;*/
   transform: rotateY(180deg);
   /*box-sizing: border-box;*/
-  /*background-color: lightgray;*/
 }
 
 .green {
@@ -78,4 +75,5 @@ background-color: black;
 color: white;
 font-size: 20px;
 margin-top: 20px;
+cursor: pointer;
 }
