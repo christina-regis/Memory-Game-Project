@@ -24,7 +24,7 @@ var checkBox = function(){
     setTimeout(function (){
       $('p').text('')}, 800);
       if (matches === 6) {
-        window.alert('You matched all the colors');
+        window.alert('You matched all the dogs');
       }
     }
     else {
@@ -38,5 +38,3 @@ $('button').on('click', function(){
   location.reload();
 });
 
-
-//reload board when reset button is pushed
