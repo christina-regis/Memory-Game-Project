@@ -1,3 +1,7 @@
+
+/*add, commit, push to origin,
+checkout master, checkout gh-pages, git merge master*/
+
 body {
   background-color: teal;
 }
@@ -12,7 +16,7 @@ h1 {
   position: block;
   height: 600px;
   width: 650px;
-  /*border: 2px solid white;*/
+  border: 2px solid white;
   text-align: center;
   margin: 0 auto;
   /*perspective: 1000px;*/

@@ -1,12 +1,13 @@
 //when box is clicked turn to backside with color
 var counter = 0;
+var matches = 0;
 $('.box').on('click', function(){
   $(this).addClass('flip');
   counter ++;
   //console.log(counter);
   if (counter === 2) {
     setTimeout(function() {checkBox()}, 500);
-  }
+    }
 });
 
 //check if both turned over cards match
@@ -18,12 +19,12 @@ var checkBox = function(){
     $(square1).removeClass('flip').addClass('matched').off('click');
     $(square2).removeClass('flip').addClass('matched').off('click');
     counter = 0;
+    matches = matches + 1;
     window.alert('You got a match!');
+      if (matches === 6) {
+        window.alert('You matched all the colors');
+      }
     }
-    else if ((!$(this).hasClass('flip'))) {
-      window.alert('Good job, you matched all the colors!');
-    }
-
     else {
       $(square2).removeClass('flip');
       $(square1).removeClass('flip');
@@ -31,6 +32,11 @@ var checkBox = function(){
     }
   };
 
+$('button').on('click', function() {
+  $('div').each( function(){
+    $('div').removeClass('matched').on('click');
+  });
+});
 
 
 //when all colors are matched alert "Good Job, you have a great memory!"
