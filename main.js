@@ -5,7 +5,6 @@ $('.box').on('click', function(){
   if ($(this).hasClass('matched')) {
     return false;
   } else {
-
   $(this).addClass('flip');
   counter ++;
   //console.log(counter);
@@ -25,9 +24,10 @@ var checkBox = function(){
     $(square2).removeClass('flip').addClass('matched');
     counter = 0;
     matches = matches + 1;
-    $('p').text('You made a match!');
+    $('.matchesMade').text('Matches made: ' + matches );
+    $('.matchesNotify').text('You made a match!');
     setTimeout(function (){
-      $('p').text('')}, 800);
+      $('.matchesNotify').text('')}, 800);
       if (matches === 6) {
         window.alert('You matched all the dogs');
       }
@@ -47,5 +47,6 @@ $('button').on('click', function(){
   });
   $(randomDivs).appendTo(randomDivs[0].parentNode).show();
   matches = 0;
+   $('.matchesMade').text('Matches made: ' + matches );
 });
 
