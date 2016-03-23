@@ -35,10 +35,12 @@ var checkBox = function(){
   };
 
 $('button').on('click', function(){
+  $('.flip').removeClass('flip');
+  $('.matched').removeClass('matched');
   var randomDivs = $('.box').get().sort(function() {
     return Math.round(Math.random())-0.5;
-    location.reload();
+   // location.reload();
   });
   $(randomDivs).appendTo(randomDivs[0].parentNode).show();
-  });
+});
 

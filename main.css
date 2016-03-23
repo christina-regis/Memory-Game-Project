@@ -19,9 +19,9 @@ p {
 
 .container {
   position: block;
-  height: 650px;
+  height: 500px;
   width: 650px;
-  border: 2px solid white;
+  /*border: 2px solid white;*/
   text-align: center;
   margin: 0 auto;
   /*perspective: 1000px;*/
@@ -92,16 +92,16 @@ p {
 
 .container2 {
   width: 650px;
-  height: 200px;
+  height: 75px;
   text-align: center;
-  border: solid white 2px;
-  margin: 0;
+  /*border: solid white 2px;*/
+  margin: 0 auto;
 }
 
 button {
 background-color: black;
 color: white;
 font-size: 20px;
-margin-top: 20px;
+margin-top: 25px;
 cursor: pointer;
 }
