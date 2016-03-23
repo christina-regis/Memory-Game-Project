@@ -19,9 +19,9 @@ p {
 
 .container {
   position: block;
-  height: 600px;
+  height: 650px;
   width: 650px;
-/*  border: 2px solid white;*/
+  border: 2px solid white;
   text-align: center;
   margin: 0 auto;
   /*perspective: 1000px;*/
@@ -88,6 +88,14 @@ p {
   background-image: url("images/german.jpg");
   background-position: center;
   background-size: 175%;
+}
+
+.container2 {
+  width: 650px;
+  height: 200px;
+  text-align: center;
+  border: solid white 2px;
+  margin: 0;
 }
 
 button {
