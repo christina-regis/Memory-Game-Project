@@ -6,15 +6,25 @@ body {
   background: url("images/treesbackground.jpg");
 }
 
+.container3 {
+  width: 650px;
+  height: 75px;
+  text-align: center;
+  /*border: solid white 2px;*/
+  margin: 0 auto;
+}
+
 h1 {
   color: white;
-  padding: 5px;
+  padding: 0px 0px 0px 0px;
   text-align: center;
+  margin: 0px;
 }
 
 p {
-  color: white;
+  color: #ffff80;
   font-size: 30px;
+  margin: 0px;
 }
 
 .container {
