@@ -12,14 +12,6 @@ body {
   margin: 0 auto;
 }
 
-.cats {
-  float: right;
-}
-
-.dogs {
-  float: left;
-}
-
 h1 {
   color: white;
   padding: 0px 0px 0px 0px;
@@ -118,12 +110,12 @@ h1 {
 }
 
 .reset {
-background-color: black;
-color: white;
-font-size: 18px;
-float: right;
-margin-top: 20px;
-cursor: pointer;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  float: right;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {

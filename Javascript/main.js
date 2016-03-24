@@ -55,6 +55,7 @@ var checkBox = function(){
       counter = 0;
       }
 };
+//reset button, randomizes cards
 $('.reset').on('click', function(){
   $('.flip').removeClass('flip');
   $('.matched').removeClass('matched');
