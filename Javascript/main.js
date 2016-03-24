@@ -1,3 +1,4 @@
+
 //when box is clicked turn to backside with picture
 var counter = 0;
 var matches = 0;
@@ -8,10 +9,9 @@ $('.box').on('click', function(){
   } else {
   $(this).addClass('flip');
   counter ++;
-  //console.log(counter);
-  if (counter === 2) {
-    //unable to finish first checkbox function before next one starts
-    setTimeout(function() {checkBox();}, 500);
+    if (counter === 2) {
+      //unable to finish first checkbox function before next one starts
+      setTimeout(function() {checkBox();}, 500);
     }
   }
 });
@@ -28,6 +28,7 @@ var checkBox = function(){
     matches = matches + 1;
     $('.matchesMade').text('Matches made: ' + matches );
     $('.matchesNotify').text('You made a match!');
+
     setTimeout(function (){
       $('.matchesNotify').text('');}, 800);
       if (matches === 6) {
@@ -46,15 +47,14 @@ var checkBox = function(){
             console.log('cancel');
         }
       }
-    }
+    } else {
     //if squares do not match, turns cards back over
-  else {
-    $(square2).removeClass('flip');
-    $(square1).removeClass('flip');
-    counter = 0;
-  }
+      $(square2).removeClass('flip');
+      $(square1).removeClass('flip');
+      counter = 0;
+      }
 };
-$('button').on('click', function(){
+$('.reset').on('click', function(){
   $('.flip').removeClass('flip');
   $('.matched').removeClass('matched');
   var randomDivs = $('.box').get().sort(function() {

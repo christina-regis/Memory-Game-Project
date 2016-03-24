@@ -4,6 +4,7 @@ checkout master, checkout gh-pages, git merge master*/
 
 body {
   background: url("images/treesbackground.jpg");
+  background-repeat: no-repeat;
 }
 
 .container3 {
@@ -12,6 +13,14 @@ body {
   text-align: center;
   /*border: solid white 2px;*/
   margin: 0 auto;
+}
+
+.cats {
+  float: right;
+}
+
+.dogs {
+  float: left;
 }
 
 h1 {
@@ -31,7 +40,7 @@ h1 {
   position: block;
   height: 500px;
   width: 650px;
-  /*border: 2px solid white;*/
+ /* border: 2px solid white;*/
   text-align: center;
   margin: 0 auto;
 }
@@ -111,7 +120,7 @@ h1 {
   float: left;
 }
 
-button {
+.reset {
 background-color: black;
 color: white;
 font-size: 18px;
@@ -119,3 +128,36 @@ float: right;
 margin-top: 20px;
 cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+ .container {
+    height: auto;
+    width: auto;
+  }
+
+  .container3 {
+    width: auto;
+  }
+
+  .container2 {
+    width: auto;
+  }
+
+  .box {
+    height: 100px;
+    width: 100px;
+  }
+
+  .face {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+
+
+
+
+
+
+
