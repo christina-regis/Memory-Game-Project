@@ -4,7 +4,8 @@ var counter = 0;
 var matches = 0;
 $('.box').on('click', function(){
   //if has class matched, card has already been matched and can't be flipped again
-  if ($(this).hasClass('matched')) {
+  //if card has been click on to flip can't be clicked again to add another flip class
+  if ($(this).hasClass('matched') || ($(this).hasClass('flip'))) {
     return false;
   } else {
   $(this).addClass('flip');
